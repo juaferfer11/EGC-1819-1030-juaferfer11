@@ -16,4 +16,4 @@ install:
 script:
   - cd decide
   - cp travis_local_settings.py local_settings.py
-  - if [$TRAVIS_BRANCH == "master"]]; then python manage.py test mixnet --keepdb; fi;
+  - if [$TRAVIS_BRANCH == "master"]]; then python manage.py test --keepdb; fi;
